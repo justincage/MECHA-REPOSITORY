@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sidewaysVelocity: 60
-  forwardVelocity: 65
+  forwardVelocity: 60
   cam: {fileID: 20347491672628070}
   anim: {fileID: 95656655657198692}
 --- !u!114 &114516836484782188

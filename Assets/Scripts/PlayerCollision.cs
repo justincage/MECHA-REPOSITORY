@@ -11,7 +11,21 @@ public class PlayerCollision : MonoBehaviour {
 
     public Transform road2;
 
-   
+    private int [] num = {0, 1, 2, 3, 4};
+
+    private float random;
+
+    private void Start()
+    {
+        
+    }
+
+
+    void Update()
+    {
+        random = (int)(Random.Range(1f, 2f));
+    }
+
 
     // Once the player object collides with another object do this
     void OnControllerColliderHit(ControllerColliderHit collisionInfo)
@@ -20,6 +34,8 @@ public class PlayerCollision : MonoBehaviour {
         if (collisionInfo.collider.tag == "Obstacle")
         {
             Debug.Log("hit obstacle"); // log file stating the obstacle was hit
+
+            movement.StopMoving();
 
             // Finds the GameManager script and calls its EndGame() function
             FindObjectOfType<GameManager>().EndGame();
@@ -32,6 +48,8 @@ public class PlayerCollision : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         
+
+
         if (other.tag == "Map")
         {
             Instantiate(road1, new Vector3(0f, 0f, other.transform.parent.position.z+200f),road2.rotation);
@@ -44,6 +62,8 @@ public class PlayerCollision : MonoBehaviour {
             
 
         }
+
+
         
     }
 }

@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour {
     private float verticalVelocity;
     private float gravity = 17.0f;
     private float jumpForce = 11.0f;
+    private bool gameOver = false;
     
     
     private void Start()
@@ -31,7 +32,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             verticalVelocity = -gravity * Time.deltaTime;
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) && !gameOver)
             {
                 verticalVelocity = jumpForce;
                 anim.Play("JumpAnim", -1, 0f);
@@ -42,7 +43,7 @@ public class PlayerMovement : MonoBehaviour {
             verticalVelocity -= gravity * Time.deltaTime;
         }
 
-        Vector3 moveVector = new Vector3(sideMove, verticalVelocity, 60);
+        Vector3 moveVector = new Vector3(sideMove, verticalVelocity, forwardVelocity);
 
         if (cam.transform.rotation.z > .015)
         {
@@ -52,17 +53,19 @@ public class PlayerMovement : MonoBehaviour {
         {
             sideMove = sidewaysVelocity * -(cam.transform.rotation.z);
         }
-        
-        
-
-        
+          
        
         controller.Move(moveVector * Time.deltaTime );
         //rb.AddForce(0f, 0f, forwardForce*Time.deltaTime);
+    }
 
-        
+    public void StopMoving()
+    {
+        Debug.Log("Stop");
 
-        
-       
+        forwardVelocity = 0;
+        sidewaysVelocity = 0;
+        jumpForce = 0;
+        gameOver = true;
     }
 }
