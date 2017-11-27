@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 8c54888855a6d78419744b1689e0b24d
-timeCreated: 1511239503
+guid: 1697f2895e0d41844966fe3f842500d5
+timeCreated: 1511730663
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -76,7 +76,7 @@ ModelImporter:
     400066: mixamorig:Spine2
     400068: polySurface1
     4300000: polySurface1
-    7400000: mixamo.com
+    7400000: Bboy Uprock
     9500000: //RootNode
     13700000: polySurface1
   externalObjects:
@@ -132,10 +132,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: mixamo.com
+      name: Bboy Uprock
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 45
+      lastFrame: 73
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -179,7 +179,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

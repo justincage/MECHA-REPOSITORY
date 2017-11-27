@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 114814017226431818}
   - component: {fileID: 114831381744232214}
   - component: {fileID: 114906320323172694}
+  - component: {fileID: 114297078583821474}
   m_Layer: 0
   m_Name: GroundPlaneSave-2
   m_TagString: Untagged
@@ -1151,6 +1152,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyTime: 6
 --- !u!114 &114297071306487968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1310816700602292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0c88d874f80cf488700b3d8b16f473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 6
+--- !u!114 &114297078583821474
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

@@ -63,6 +63,8 @@ public class PlayerMovement : MonoBehaviour {
     {
         Debug.Log("Stop");
 
+        anim.Play("Fall", -1, 0f);
+
         forwardVelocity = 0;
         sidewaysVelocity = 0;
         jumpForce = 0;

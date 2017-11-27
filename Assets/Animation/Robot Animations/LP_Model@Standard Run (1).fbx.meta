@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 1f247898ddbecd54e80db0d408475b5b
-timeCreated: 1511236383
+guid: 40331c330aa6c8a41ba3abae6f57bab6
+timeCreated: 1511732047
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -75,9 +75,47 @@ ModelImporter:
     400064: mixamorig:Spine1
     400066: mixamorig:Spine2
     400068: polySurface1
+    2300000: polySurface1
+    3300000: polySurface1
     4300000: polySurface1
-    7400000: Jumping Animation
+    7400000: Standard Run (1)
+    7400002: Standard Run (1) //// mixamorig:Hips
     9500000: //RootNode
+    11100000: //RootNode
+    11100002: mixamorig:Head
+    11100004: mixamorig:HeadTop_End
+    11100006: mixamorig:Hips
+    11100008: mixamorig:LeftArm
+    11100010: mixamorig:LeftFoot
+    11100012: mixamorig:LeftForeArm
+    11100014: mixamorig:LeftHand
+    11100016: mixamorig:LeftHandIndex1
+    11100018: mixamorig:LeftHandIndex2
+    11100020: mixamorig:LeftHandIndex3
+    11100022: mixamorig:LeftHandIndex4
+    11100024: mixamorig:LeftLeg
+    11100026: mixamorig:LeftShoulder
+    11100028: mixamorig:LeftToe_End
+    11100030: mixamorig:LeftToeBase
+    11100032: mixamorig:LeftUpLeg
+    11100034: mixamorig:Neck
+    11100036: mixamorig:RightArm
+    11100038: mixamorig:RightFoot
+    11100040: mixamorig:RightForeArm
+    11100042: mixamorig:RightHand
+    11100044: mixamorig:RightHandIndex1
+    11100046: mixamorig:RightHandIndex2
+    11100048: mixamorig:RightHandIndex3
+    11100050: mixamorig:RightHandIndex4
+    11100052: mixamorig:RightLeg
+    11100054: mixamorig:RightShoulder
+    11100056: mixamorig:RightToe_End
+    11100058: mixamorig:RightToeBase
+    11100060: mixamorig:RightUpLeg
+    11100062: mixamorig:Spine
+    11100064: mixamorig:Spine1
+    11100066: mixamorig:Spine2
+    11100068: polySurface1
     13700000: polySurface1
   externalObjects:
   - first:
@@ -111,10 +149,10 @@ ModelImporter:
     materialSearch: 1
     materialLocation: 0
   animations:
-    legacyGenerateAnimations: 4
+    legacyGenerateAnimations: 1
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -123,27 +161,27 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 1
-    animationRotationError: 0.5
-    animationPositionError: 0.5
+    animationCompression: 3
+    animationRotationError: 0
+    animationPositionError: 0
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Jumping Animation
+      name: Standard Run (1)
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 35
+      lastFrame: 17
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -158,7 +196,7 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -179,7 +217,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -201,7 +239,7 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
