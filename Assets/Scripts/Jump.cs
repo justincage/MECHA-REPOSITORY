@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour {
 
-    [Range(1, 10)]
+    [Range(1, 20)]
     public float jumpVelocity;
 
 	// Update is called once per frame

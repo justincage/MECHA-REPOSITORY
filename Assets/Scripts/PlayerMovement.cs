@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public float sidewaysVelocity;
+    private float sidewaysVelocity;
     private float sideMove;
 
-    public float forwardVelocity;
+    private float forwardVelocity;
 
     public Camera cam;
 
@@ -22,12 +23,18 @@ public class PlayerMovement : MonoBehaviour {
     private void Start()
     {
         controller = GetComponent<CharacterController>();
+        anim.Play("Intro_Walk", -1, 0f);
+        forwardVelocity = 0;
+        sidewaysVelocity = 0;
+        verticalVelocity = 0;
+
+        Invoke(("SetSpeed"), 3.3f);
+ 
     }
 
     // Unity likes FixedUpdate more than Update with Physics based interactions
     void FixedUpdate ()
     {
-
         if (controller.isGrounded)
         {
             verticalVelocity = -gravity * Time.deltaTime;
@@ -35,7 +42,7 @@ public class PlayerMovement : MonoBehaviour {
             if (Input.GetKey(KeyCode.Space) && !gameOver)
             {
                 verticalVelocity = jumpForce;
-                anim.Play("JumpAnim", -1, 0f);
+                anim.Play("Jump", -1, 0f);
             }
         }
         else
@@ -52,6 +59,12 @@ public class PlayerMovement : MonoBehaviour {
         if (cam.transform.rotation.z < -.015)
         {
             sideMove = sidewaysVelocity * -(cam.transform.rotation.z);
+        }
+
+        if (controller.transform.position.y < -1)
+        {
+            Invoke("End", 1);
+            
         }
           
        
@@ -70,4 +83,26 @@ public class PlayerMovement : MonoBehaviour {
         jumpForce = 0;
         gameOver = true;
     }
-}
+
+    public void SpeedUp()
+    {
+        Debug.Log("hit");
+        forwardVelocity += 10;
+        sidewaysVelocity += 10;
+    }
+
+    public void SetSpeed()
+    {
+        forwardVelocity = 30;
+        sidewaysVelocity = 30;
+
+        Invoke(("SpeedUp"), 1f);
+    }
+
+    public void End()
+    {
+        //FindObjectOfType<GameManager>().EndGame();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    }

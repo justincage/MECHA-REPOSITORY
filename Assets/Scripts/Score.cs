@@ -24,5 +24,20 @@ public class Score : MonoBehaviour {
         
         distance = player.position.z;
          scoreText.text = distance.ToString("0");
-	}
+
+        
+
+        if (distance.ToString("0") == "1000")
+        {
+            FindObjectOfType<PlayerMovement>().SpeedUp();
+        }
+        if (distance.ToString("0") == "2000")
+        {
+            FindObjectOfType<PlayerMovement>().SpeedUp();
+        }
+        if (distance.ToString("0") == "3000")
+        {
+            FindObjectOfType<PlayerMovement>().SpeedUp();
+        }
+    }
 }
