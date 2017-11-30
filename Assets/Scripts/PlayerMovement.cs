@@ -87,8 +87,8 @@ public class PlayerMovement : MonoBehaviour {
     public void SpeedUp()
     {
         Debug.Log("hit");
-        forwardVelocity += 10;
-        sidewaysVelocity += 10;
+        forwardVelocity += 5;
+        sidewaysVelocity += 5;
     }
 
     public void SetSpeed()

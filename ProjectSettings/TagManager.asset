@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Map
-  - Map2
+  - City
   layers:
   - Default
   - TransparentFX

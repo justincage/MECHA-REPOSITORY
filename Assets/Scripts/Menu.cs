@@ -5,12 +5,12 @@ public class Menu : MonoBehaviour
 {
 
     public GameObject tutorialCanvas;
-    public GameObject tutorialCanvas2;
+    public GameObject storyCanvas;
 
     private void Start()
     {
         tutorialCanvas.SetActive(false);
-        tutorialCanvas2.SetActive(false);   
+        storyCanvas.SetActive(false);   
     }
 
     public void StartGame()
@@ -25,16 +25,15 @@ public class Menu : MonoBehaviour
         Debug.Log("Open Tutorial Button Pressed");
     }
 
-    public void NextPage()
+    public void OpenStory()
     {
-        Debug.Log("Next Page Button Pressed");
-        tutorialCanvas.SetActive(false);
-
-        tutorialCanvas2.SetActive(true);
+        storyCanvas.SetActive(true);
     }
 
     public void Close()
     {
-        tutorialCanvas2.SetActive(false);
+        tutorialCanvas.SetActive(false);
+        storyCanvas.SetActive(false);
+
     }
 }

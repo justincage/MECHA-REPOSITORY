@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialCanvas: {fileID: 387568212}
-  tutorialCanvas2: {fileID: 597304228}
+  storyCanvas: {fileID: 597304228}
 --- !u!114 &143732859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,7 +328,7 @@ RectTransform:
   m_GameObject: {fileID: 305070595}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6116453, y: 1.611646, z: 1.611646}
+  m_LocalScale: {x: 0.9925446, y: 0.99254507, z: 0.99254507}
   m_Children: []
   m_Father: {fileID: 1502594741}
   m_RootOrder: 0
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialCanvas: {fileID: 387568212}
-  tutorialCanvas2: {fileID: 597304228}
+  storyCanvas: {fileID: 597304228}
 --- !u!4 &312892906 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400068, guid: bb2d56d8622438940b74d00e549e5925, type: 3}
@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 387568215}
   - component: {fileID: 387568214}
   - component: {fileID: 387568213}
+  - component: {fileID: 387568217}
   m_Layer: 5
   m_Name: TutorialCanvas
   m_TagString: Untagged
@@ -482,6 +483,22 @@ RectTransform:
   m_AnchoredPosition: {x: -0.21000099, y: 3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &387568217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 387568212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 739800cd36aba44e9b04ce977e5784bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreReversedGraphics: 1
+  blockingObjects: 0
+  blockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &432601492
 Prefab:
   m_ObjectHideFlags: 0
@@ -597,8 +614,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 488634431}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.700005, y: -12.499979, z: 0.02}
-  m_LocalScale: {x: 0.16590984, y: 0.5716003, z: 0.57172}
+  m_LocalPosition: {x: -32.799995, y: -12.499979, z: -0.01}
+  m_LocalScale: {x: 0.11710877, y: 0.40346858, z: 0.40355307}
   m_Children:
   - {fileID: 161415948}
   m_Father: {fileID: 1502594741}
@@ -606,7 +623,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.7, y: -12.499979}
+  m_AnchoredPosition: {x: -32.8, y: -12.499979}
   m_SizeDelta: {x: 183.26, y: 36.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &488634433
@@ -649,7 +666,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 305070599}
-        m_MethodName: OpenTutorial
+        m_MethodName: OpenStory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -827,8 +844,9 @@ GameObject:
   - component: {fileID: 597304231}
   - component: {fileID: 597304230}
   - component: {fileID: 597304229}
+  - component: {fileID: 597304233}
   m_Layer: 5
-  m_Name: TutorialCanvas2
+  m_Name: StoryCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -911,6 +929,22 @@ RectTransform:
   m_AnchoredPosition: {x: -0.21, y: 3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &597304233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 597304228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 739800cd36aba44e9b04ce977e5784bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreReversedGraphics: 1
+  blockingObjects: 0
+  blockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &640036310
 Prefab:
   m_ObjectHideFlags: 0
@@ -1237,7 +1271,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Next
+  m_Text: 'Close
 
 '
 --- !u!222 &809874208
@@ -1750,7 +1784,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 143732858}
-        m_MethodName: NextPage
+        m_MethodName: Close
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2007,6 +2041,7 @@ GameObject:
   - component: {fileID: 1502594740}
   - component: {fileID: 1502594739}
   - component: {fileID: 1502594738}
+  - component: {fileID: 1502594742}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2079,7 +2114,7 @@ RectTransform:
   m_GameObject: {fileID: 1502594737}
   m_LocalRotation: {x: -0, y: -0.23523264, z: -0, w: 0.97193915}
   m_LocalPosition: {x: -1.4599991, y: 3, z: 1.78}
-  m_LocalScale: {x: 0.046953212, y: 0.023670387, z: 1}
+  m_LocalScale: {x: 0.067996375, y: 0.034278832, z: 1.4481738}
   m_Children:
   - {fileID: 305070596}
   - {fileID: 1984794562}
@@ -2093,6 +2128,22 @@ RectTransform:
   m_AnchoredPosition: {x: -1.46, y: 3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1502594742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1502594737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 739800cd36aba44e9b04ce977e5784bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreReversedGraphics: 1
+  blockingObjects: 0
+  blockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &1507507819
 Prefab:
   m_ObjectHideFlags: 0
@@ -2342,7 +2393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialCanvas: {fileID: 387568212}
-  tutorialCanvas2: {fileID: 597304228}
+  storyCanvas: {fileID: 597304228}
 --- !u!114 &1759673772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2400,8 +2451,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1837174840}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.7, y: -12.5, z: 0.02}
-  m_LocalScale: {x: 0.16590984, y: 0.5716003, z: 0.57172}
+  m_LocalPosition: {x: 32.4, y: -12.5, z: -0.01}
+  m_LocalScale: {x: 0.12788084, y: 0.44058105, z: 0.44067332}
   m_Children:
   - {fileID: 2124523404}
   m_Father: {fileID: 1502594741}
@@ -2409,7 +2460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 39.7, y: -12.5}
+  m_AnchoredPosition: {x: 32.4, y: -12.5}
   m_SizeDelta: {x: 183.26, y: 36.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837174842
@@ -2523,7 +2574,7 @@ RectTransform:
   m_GameObject: {fileID: 1984794561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.19999695, y: -12.700001, z: -0}
-  m_LocalScale: {x: 0.19634667, y: 0.6769927, z: 0.6769927}
+  m_LocalScale: {x: 0.1708216, y: 0.58898365, z: 0.58898365}
   m_Children:
   - {fileID: 966428625}
   m_Father: {fileID: 1502594741}

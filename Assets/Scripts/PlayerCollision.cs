@@ -26,7 +26,7 @@ public class PlayerCollision : MonoBehaviour {
 
     void Update()
     {
-        random = (int)(Random.Range(1f, 2f));
+        
     }
 
 
@@ -60,9 +60,10 @@ public class PlayerCollision : MonoBehaviour {
     {
 
         // If player distance is sub 2000 do this
-        if (other.tag == "Map")
+        if (other.tag == "City")
         {
-            Instantiate(roads[1], new Vector3(0f, 0f, other.transform.parent.position.z + 200f), roads[1].rotation);
+            random = (Random.Range(0f, 3f));
+            Instantiate(roads[(int)random], new Vector3(0f, 0f, other.transform.parent.position.z + 200f), roads[(int)random].rotation);
 
         }
         if(other.tag == "Map2")
