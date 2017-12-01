@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour {
     private CharacterController controller;
 
     private float verticalVelocity;
-    private float gravity = 17.0f;
+    private float gravity = 18.0f;
     private float jumpForce = 11.0f;
     private bool gameOver = false;
     
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour {
         {
             verticalVelocity = -gravity * Time.deltaTime;
 
-            if (Input.GetKey(KeyCode.Space) && !gameOver)
+            if (Input.GetButtonDown("Fire1") && !gameOver)
             {
                 verticalVelocity = jumpForce;
                 anim.Play("Jump", -1, 0f);
@@ -89,12 +89,13 @@ public class PlayerMovement : MonoBehaviour {
         Debug.Log("hit");
         forwardVelocity += 5;
         sidewaysVelocity += 5;
+        gravity += 2;
     }
 
     public void SetSpeed()
     {
-        forwardVelocity = 30;
-        sidewaysVelocity = 30;
+        forwardVelocity = 33;
+        sidewaysVelocity = 33;
 
         Invoke(("SpeedUp"), 1f);
     }
