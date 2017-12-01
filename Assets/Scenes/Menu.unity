@@ -299,6 +299,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013210091632, guid: 970dd4b9371394fb4890965f608d46fd,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
   m_IsPrefabParent: 0
@@ -397,8 +402,8 @@ GameObject:
   - component: {fileID: 387568216}
   - component: {fileID: 387568215}
   - component: {fileID: 387568214}
-  - component: {fileID: 387568213}
   - component: {fileID: 387568217}
+  - component: {fileID: 387568213}
   m_Layer: 5
   m_Name: TutorialCanvas
   m_TagString: Untagged
@@ -414,14 +419,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 387568212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
+  raycasterEventMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  maxRaycastHits: 64
 --- !u!114 &387568214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -843,8 +847,8 @@ GameObject:
   - component: {fileID: 597304232}
   - component: {fileID: 597304231}
   - component: {fileID: 597304230}
-  - component: {fileID: 597304229}
   - component: {fileID: 597304233}
+  - component: {fileID: 597304229}
   m_Layer: 5
   m_Name: StoryCanvas
   m_TagString: Untagged
@@ -860,14 +864,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 597304228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
+  raycasterEventMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  maxRaycastHits: 64
 --- !u!114 &597304230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2049,14 +2052,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1502594737}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
+  raycasterEventMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  maxRaycastHits: 64
 --- !u!114 &1502594739
 MonoBehaviour:
   m_ObjectHideFlags: 0
