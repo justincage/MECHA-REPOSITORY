@@ -122,7 +122,6 @@ GameObject:
   - component: {fileID: 143732857}
   - component: {fileID: 143732860}
   - component: {fileID: 143732859}
-  - component: {fileID: 143732858}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -148,19 +147,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &143732858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 143732856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce11abab26acdb146b304915a220691c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tutorialCanvas: {fileID: 387568212}
-  storyCanvas: {fileID: 597304228}
 --- !u!114 &143732859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,7 +283,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498412, guid: 970dd4b9371394fb4890965f608d46fd, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114000013210091632, guid: 970dd4b9371394fb4890965f608d46fd,
         type: 2}
@@ -317,7 +303,6 @@ GameObject:
   - component: {fileID: 305070596}
   - component: {fileID: 305070598}
   - component: {fileID: 305070597}
-  - component: {fileID: 305070599}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -375,19 +360,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 305070595}
---- !u!114 &305070599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 305070595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce11abab26acdb146b304915a220691c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tutorialCanvas: {fileID: 387568212}
-  storyCanvas: {fileID: 597304228}
 --- !u!4 &312892906 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400068, guid: bb2d56d8622438940b74d00e549e5925, type: 3}
@@ -403,7 +375,6 @@ GameObject:
   - component: {fileID: 387568215}
   - component: {fileID: 387568214}
   - component: {fileID: 387568217}
-  - component: {fileID: 387568213}
   m_Layer: 5
   m_Name: TutorialCanvas
   m_TagString: Untagged
@@ -411,21 +382,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &387568213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 387568212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  raycasterEventMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  maxRaycastHits: 64
 --- !u!114 &387568214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,7 +625,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 305070599}
+      - m_Target: {fileID: 827318935}
         m_MethodName: OpenStory
         m_Mode: 1
         m_Arguments:
@@ -791,7 +747,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 143732858}
+      - m_Target: {fileID: 827318935}
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -848,7 +804,6 @@ GameObject:
   - component: {fileID: 597304231}
   - component: {fileID: 597304230}
   - component: {fileID: 597304233}
-  - component: {fileID: 597304229}
   m_Layer: 5
   m_Name: StoryCanvas
   m_TagString: Untagged
@@ -856,21 +811,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &597304229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 597304228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  raycasterEventMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  maxRaycastHits: 64
 --- !u!114 &597304230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1275,6 +1215,49 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 809874205}
+--- !u!1 &827318934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 827318936}
+  - component: {fileID: 827318935}
+  m_Layer: 0
+  m_Name: MenuManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &827318935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827318934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce11abab26acdb146b304915a220691c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuCanvas: {fileID: 1502594737}
+  tutorialCanvas: {fileID: 387568212}
+  storyCanvas: {fileID: 597304228}
+--- !u!4 &827318936
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827318934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.3831259, y: 3.0582879, z: 8.105655}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867046366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1778,7 +1761,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 143732858}
+      - m_Target: {fileID: 827318935}
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -2035,7 +2018,6 @@ GameObject:
   - component: {fileID: 1502594741}
   - component: {fileID: 1502594740}
   - component: {fileID: 1502594739}
-  - component: {fileID: 1502594738}
   - component: {fileID: 1502594742}
   m_Layer: 5
   m_Name: Canvas
@@ -2044,21 +2026,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1502594738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1502594737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb5dd43baba2d4dc1bab789615567e3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  raycasterEventMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  maxRaycastHits: 64
 --- !u!114 &1502594739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2115,7 +2082,7 @@ RectTransform:
   - {fileID: 1837174841}
   - {fileID: 488634432}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -27.211, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2459,7 +2426,6 @@ GameObject:
   - component: {fileID: 1759673770}
   - component: {fileID: 1759673773}
   - component: {fileID: 1759673772}
-  - component: {fileID: 1759673771}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2485,19 +2451,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1759673771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1759673769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce11abab26acdb146b304915a220691c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tutorialCanvas: {fileID: 387568212}
-  storyCanvas: {fileID: 597304228}
 --- !u!114 &1759673772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2606,7 +2559,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 305070599}
+      - m_Target: {fileID: 827318935}
         m_MethodName: OpenTutorial
         m_Mode: 1
         m_Arguments:
@@ -2728,7 +2681,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 305070599}
+      - m_Target: {fileID: 827318935}
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -2938,7 +2891,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 766346198, guid: 463285ecd6702471a909ba810832bf0e, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 463285ecd6702471a909ba810832bf0e, type: 2}

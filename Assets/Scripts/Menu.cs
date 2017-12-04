@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-
+    public GameObject menuCanvas;
     public GameObject tutorialCanvas;
     public GameObject storyCanvas;
 
@@ -28,10 +28,13 @@ public class Menu : MonoBehaviour
     public void OpenStory()
     {
         storyCanvas.SetActive(true);
+        
     }
 
     public void Close()
     {
+        menuCanvas.SetActive(true);
+
         tutorialCanvas.SetActive(false);
         storyCanvas.SetActive(false);
 
