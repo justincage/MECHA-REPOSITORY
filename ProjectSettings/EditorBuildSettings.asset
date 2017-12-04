@@ -5,15 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu.unity
     guid: 93f0900452d22d249be4f71d7c9179b9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Animation_Scene_Justin.unity
     guid: 4d2c95363f8368346ad24f590c00b918
   - enabled: 1
     path: Assets/Scenes/Endless Runner Scene.unity
     guid: bb95a25253a332c4185cc60496824681
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Credits.unity
     guid: 28fcffd386603f94fa083f0b96819910
