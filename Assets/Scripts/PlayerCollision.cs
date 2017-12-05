@@ -62,7 +62,7 @@ public class PlayerCollision : MonoBehaviour {
         // If player distance is sub 2000 do this
         if (other.tag == "City")
         {
-            random = (Random.Range(0f, 3f));
+            random = (Random.Range(0f, 5f));
             Instantiate(roads[(int)random], new Vector3(0f, 0f, other.transform.parent.position.z + 200f), roads[(int)random].rotation);
 
         }

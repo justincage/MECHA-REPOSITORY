@@ -3,22 +3,33 @@ using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour {
 
-    public Animation anim;
-
-    void GetUp()
+    public GameObject menuCanvas;
+    public GameObject creditsCanvas;
+ 
+    private void Start()
     {
-        if (anim.IsPlaying("GetUp"))
-        {
-            
-        }
+        creditsCanvas.SetActive(false);
+       
     }
 
-    void StandingToFighting()
+    public void StartGame()
     {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    void Fight()
+    public void OpenCredits()
     {
+        creditsCanvas.SetActive(true);
+
+        Debug.Log("Open Tutorial Button Pressed");
+    }
+
+
+    public void Close()
+    {
+        menuCanvas.SetActive(true);
+
+        creditsCanvas.SetActive(false);
 
     }
 
