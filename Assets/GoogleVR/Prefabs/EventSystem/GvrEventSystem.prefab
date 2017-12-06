@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd4baceb58cc40c98e500572bede6a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vrModeOnly: 1
+  vrModeOnly: 0
   scrollInput:
     inertia: 1
     decelerationRate: 0.05
