@@ -20,8 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 224769355964098452}
   - component: {fileID: 20529183701632324}
+  - component: {fileID: 92102640890064922}
   - component: {fileID: 124738388045350892}
   - component: {fileID: 81165321910408332}
+  - component: {fileID: 223311275555054036}
+  - component: {fileID: 114129151927060096}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -52,7 +55,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1393353359270776}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -135,6 +138,29 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1142777156953808}
   m_Enabled: 1
+--- !u!92 &92102640890064922
+Behaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142777156953808}
+  m_Enabled: 1
+--- !u!114 &114129151927060096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142777156953808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 739800cd36aba44e9b04ce977e5784bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ignoreReversedGraphics: 0
+  blockingObjects: 0
+  blockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &114809814732754152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   raycastMode: 0
   overridePointerCamera: {fileID: 0}
-  drawDebugRays: 1
+  drawDebugRays: 0
   maxReticleDistance: 10
   reticleSegments: 20
   reticleGrowthSpeed: 8
@@ -160,6 +186,26 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1142777156953808}
   m_Enabled: 1
+--- !u!223 &223311275555054036
+Canvas:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142777156953808}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!224 &224769355964098452
 RectTransform:
   m_ObjectHideFlags: 1
