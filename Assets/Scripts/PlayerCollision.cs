@@ -53,7 +53,7 @@ public class PlayerCollision : MonoBehaviour {
     void End()
     {
         // FindObjectOfType<GameManager>().EndGame();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void OnTriggerEnter(Collider other)
