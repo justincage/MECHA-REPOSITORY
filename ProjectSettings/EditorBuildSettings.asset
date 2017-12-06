@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 93f0900452d22d249be4f71d7c9179b9
+    path: Assets/Scenes/Credits 1.unity
+    guid: ccf219046e842414aa2b3ff8f500caf5
   - enabled: 1
     path: Assets/Scenes/Animation_Scene_Justin.unity
     guid: 4d2c95363f8368346ad24f590c00b918
