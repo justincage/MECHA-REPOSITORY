@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour {
     public void End()
     {
         //FindObjectOfType<GameManager>().EndGame();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex  -2);
     }
 
     }
